@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { render, screen, fireEvent } from '@testing-library/react';
 import { GameBoard } from '../GameBoard';
 import { Board, BOARD_SIZE } from '../../types/game';

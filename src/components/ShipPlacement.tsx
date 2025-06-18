@@ -38,7 +38,7 @@ export const ShipPlacement: React.FC<ShipPlacementProps> = ({
     }
   };
 
-  const canComplete = unplacedShips.length === 0;
+
 
   return (
     <div className="flex flex-col items-center space-y-6 p-6">

@@ -12,7 +12,7 @@ interface GameBoardProps {
 
 export const GameBoard: React.FC<GameBoardProps> = ({
   board,
-  isPlayerBoard = false,
+
   onCellClick,
   showShips = false,
   className,
