@@ -21,23 +21,15 @@ export const BattleScreen: React.FC = () => {
   };
 
   useEffect(() => {
-    console.log('BattleScreen useEffect triggered, currentPlayer:', currentPlayer);
     if (currentPlayer === 'cpu') {
-      console.log('Setting CPU timer...');
       const timer = setTimeout(() => {
-        console.log('CPU timer fired, generating shot...');
         const cpuShot = generateCPUShot();
-        console.log('Generated CPU shot:', cpuShot);
         if (cpuShot) {
-          console.log('Firing CPU shot:', cpuShot);
           fireShot(cpuShot);
-        } else {
-          console.log('No valid CPU shot found');
         }
       }, 1000); // 1 second delay for CPU move
 
       return () => {
-        console.log('Cleaning up CPU timer');
         clearTimeout(timer);
       };
     }
